@@ -1,0 +1,249 @@
+body {
+    font-family: 'Mooli', sans-serif;
+    font-size: 18px;
+}
+
+/*header-content----------------------------------------------------------------*/
+.header-content {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    background-color: rgb(13, 82, 211);
+}
+/*header-menu*/
+.header-menu {
+    width: 10%;
+    height: 100%;
+    /*background-color: rgb(26, 102, 77);*/
+}
+.menu-icono {
+    /*background-color: blueviolet;*/
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+}
+.menu-horizontal {
+    /*background-color: red;*/
+    display: flex;
+}
+.menu-horizontal > li > a {
+    /*background-color: aqua;*/
+}
+.header-menu > nav > ul > li {
+    list-style-type: none;
+}
+.menu-horizontal > li > a {
+    color: black;
+    text-decoration: none;
+}
+.input {
+    width: 10px;
+}
+.menu-vertical {
+    display: flex;
+    flex-flow: column wrap;
+    width: 15%;
+    gap: 20px;
+    background-color: rgb(18, 51, 141);
+    opacity: 0.9;
+    margin-top: -31px;
+    margin-left: -10px;
+    position: absolute;
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    /*display: none;*/
+}
+.menu-vertical li {
+    list-style: none;
+}
+.menu-vertical > li > a {
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.menu-vertical li:hover {
+    background-color: rgb(70, 129, 196);
+    
+}
+.menu-vertical >li > a {
+    color: aliceblue;
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: flex;
+}
+
+
+/*header-logo*/
+.header-logo {
+    width: 65%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    /*background-color: blueviolet;*/
+}
+.header-menu a {
+    color: black;
+}
+.logo a {
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+}
+/*header-content-cuenta*/
+.header-content-cuenta {
+    display: flex;
+    /*background-color: blue;*/
+    justify-content: right;
+    width: 25%;
+    height: 100%;
+    padding: 10px 10px 0 0;
+}
+.hader-content-hover {
+    display: flex;
+    height: 100%;
+    gap: 5px;
+    /*background-color: aqua;*/
+}
+.hader-content-hover:hover .header-content_acceso a {
+    text-decoration: underline;
+}
+.header-content_icono {
+    height: 100%;
+}
+.header-cuenta-img img{
+    width: 20px;
+    height: 20px;
+}
+.header-content_acceso {
+    height: 100%;
+}
+.header-content_acceso a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+
+/*main-aside-content-----------------------------------------------------------------------------------------*/
+.main-aside-content {
+    /*background-color: rgb(7, 94, 194);*/
+    display: flex;
+    line-height: 22px;
+    flex-wrap: wrap;
+    /*border: 2px solid blue;*/
+}
+/*main-content*/
+.main-content {
+    /*background-color: blue;*/
+    width: 55%;
+    /*border: 2px solid black;*/
+}
+.main-img {
+    /*background-color: red;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+} 
+.main-img img {
+    width: 100%;
+    /*border: 2px solid blueviolet;*/
+    /*margin-bottom: -5px;*/
+    object-fit: cover;
+    /*object-position: bottom;*/
+}
+/*aside-content*/
+.aside-content {
+    display: flex;
+    width: 45%;
+    flex-flow: column wrap;
+    background-color: rgb(94, 150, 255);
+    gap: 7px;   
+    /*border: 2px solid blue;*/
+}
+.aside-content div {
+    /*background-color: blueviolet;*/
+    padding: 5px;
+    
+}
+.aside-titulo p {
+    font-size: 16px;
+}
+.aside-detalles {
+    font-size: 16px;
+}
+.aside-detalles > div >  b {
+    font-size: 18px;
+}
+.ingredientes > ul > li {
+    font-size: 16px;
+}
+.ingredientes-lista li {
+    list-style-position: outside;
+    margin-left: 20px;
+}
+.instrucciones > ol > li {
+    font-size: 16px;
+    margin-left: 20px;
+}
+.aside-nutrientes div {
+    font-size: 16px;
+}
+.calorias-content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+/*menu-responsive---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+    .main-aside-content {
+        flex-direction: column;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .aside-content {
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .aside-detalles {
+        display: flex;
+        flex-wrap: row wrap;
+        gap: 10px;
+    }
+    .aside-detalles div {
+        /*background-color: aqua;*/
+    }
+    .aside-nutrientes {
+        width: 100%;
+    }
+    .menu-vertical {
+        width: 20%;
+    }
+}
+/*menu-responsive2--------------------------------------------------*/
+@media only screen and (max-width: 510px) {
+    .aside-detalles {
+        font-size: 10px;
+        line-height: 15px;
+        flex-wrap: wrap;
+    }
+    .aside-detalles > div >  b {
+        font-size: 13px;
+        
+    }
+    .calorias-content div {
+        font-size: 14px;
+        /*background-color: brown;*/
+    }
+    .calorias-content {
+       gap: 0;
+    }
+    .menu-vertical {
+        width: 30%;
+    }
+}
